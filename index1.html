@@ -11,6 +11,14 @@
 
     //ENTRADA
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let letrasMinusculas = [];
+    for (let contador = 0; contador <listaDeLetras.length; contador++) {
+        const letra = listaDeLetras[contador].toLowerCase();
+        if (letrasMinusculas.includes(letra) == false) {
+            letrasMinusculas.push(letra);
+        }
+    }
+    document.write(letrasMinusculas.sort());
     
     
     //PROCESSAMENTO
