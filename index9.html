@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: CALCULAR POPULAÇÃO
+    Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
+    */
+
+    //ENTRADA
+    let total = 50000;
+    for (let contador = 1; contador <= 10; contador++) {
+        total = total * 1.015;
+        if(contador === 5){
+            document.write(`Em 5 anos haverá ${Math.ceil(total)} habitantes <br>`);
+        } else if (contador === 10){
+            document.write(`Em 10 anos haverá ${Math.ceil(total)} habitantes`);
+        } else{
+
+        }
+    };
+    
+    //PROCESSAMENTO
+    
+
+    //SAÍDA
+
+</script>
