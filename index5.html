@@ -6,15 +6,23 @@
     */
 
     //ENTRADA
-    const usuario = Number(prompt(`Informe um número:`));
-    for (let num = 2; num < usuario; num++) {
-        if (usuario % num == 0 ) {
-            
-        } else {
-           
+    let primo = 0;
+    let numero = "";
+    let conta = 0;
+    const numeroDito = Number(prompt(`Informe um numero;`));
+
+    for (let contador = 1; contador < 10; contador++) {
+        conta = numeroDito / contador
+        if(Math.ceil(conta) === conta){
+            primo = primo + 1;
         }
-    };
-    document.write(`${usuario}`);
+        if(primo === 2){
+            numero = "é Primo";
+        } else{
+            numero = "Não é Primo";
+        }
+    }
+    document.write(`${numeroDito} ${numero}.`);
     //PROCESSAMENTO
 
 
